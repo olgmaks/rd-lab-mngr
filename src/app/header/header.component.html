@@ -1,0 +1,27 @@
+<mat-toolbar color="primary" class="z-depth-4">
+
+  <button mat-icon-button [matMenuTriggerFor]="menu">
+    <mat-icon>more_vert</mat-icon>
+  </button>
+  <span class="spacer" ></span>
+
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item routerLink="/courses">
+      <mat-icon>library_books</mat-icon>
+      <span class="example-spacer">Courses</span>
+    </button>
+    <button mat-menu-item routerLink="/users">
+      <mat-icon>supervisor_account</mat-icon>
+      <span>Users</span>
+    </button>
+  </mat-menu>
+
+  <span routerLink="/" style="cursor: pointer">RD Lab Manager</span>
+
+  <span class="example-spacer"></span>
+
+  <button routerLink="/auth/signin" mat-button>Sign In</button>
+
+  <button routerLink="/auth/signup" mat-button>Sign Up</button>
+
+</mat-toolbar>
